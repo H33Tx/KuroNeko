@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [Screenshots](screenshots.md)
 
 ## Setup
 
