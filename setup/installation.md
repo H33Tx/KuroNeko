@@ -66,21 +66,21 @@ There you can customize all the stuff. Here's a quick overview of what does what
 * `$config["private"] (bool)` Force users to login
 * `$config["cookie"] (string)` The cookie-prefix to store login-sessions
 * `$config["perpage"] (int)` The default amount of items shown on a page
-* `$min_un_length` The amount of chars the username needs at least
-* `$max_un_length` The amount of chars the username can have at most
-* `$min_pw_length` The amount of chars the password needs at least
-* `$max_pw_length` The amount of chars the password can have at most
-* `$min_em_length` The amount of chars the Email needs at least
-* `$max_em_length` The amount of chars the Email can have at most
-* `$images["signup"]` The image that will be shown on the left side of the Signup-container
-* `$images["login"]` The image that will be shown on the left side of the Login-container
-* `$images["avatar"]` The image that will be the default avatar for new users
-* `$images["footer_bg"]` The background-image of the footer
-* `$images["loading"]` The image, that will be shown when an image is still loading
-* `$slave["host"]` The MySQL Database host
-* `$slave["user"]` The username for the MySQL Database
-* `$slave["pass"]` The password for the user
-* `$slave["tale"]` The name of the MySQL Database
+* `$min_un_length (int)` The amount of chars the username needs at least
+* `$max_un_length (int)` The amount of chars the username can have at most
+* `$min_pw_length (int)` The amount of chars the password needs at least
+* `$max_pw_length (int)` The amount of chars the password can have at most
+* `$min_em_length (int)` The amount of chars the Email needs at least
+* `$max_em_length (int)` The amount of chars the Email can have at most
+* `$images["signup"] (string)` The image that will be shown on the left side of the Signup-container
+* `$images["login"] (string)` The image that will be shown on the left side of the Login-container
+* `$images["avatar"] (string)` The image that will be the default avatar for new users
+* `$images["footer_bg"] (string)` The background-image of the footer
+* `$images["loading"] (string)` The image, that will be shown when an image is still loading
+* `$slave["host"] (string)` The MySQL Database host
+* `$slave["user"] (string)` The username for the MySQL Database
+* `$slave["pass"] (string)` The password for the user
+* `$slave["tale"] (string)` The name of the MySQL Database
 
 ### Creating an Admin
 
@@ -103,7 +103,7 @@ If yes, you need to set the user-level in the DB to `9001`.
 mysql -u username -p password
 # Then update the account and set the level to 9001
 # Make sure to replace 'database_name' with the name of yours
-mysql> UPDATE database_name SET level=9001
+mysql> UPDATE database_name.users SET level=9001
 # If it asks for any confirmation, just confirm
 # If everything went right, you are done here :)
 ```

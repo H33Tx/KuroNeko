@@ -4,6 +4,7 @@
 
 ## Setup
 
+* [Screenshots](setup/screenshots.md)
 * [Technologies used](setup/technologies-used.md)
 * [Requirements](setup/requirements.md)
 * [Installation](setup/installation.md)
